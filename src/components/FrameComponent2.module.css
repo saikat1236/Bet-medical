@@ -1,0 +1,76 @@
+.frameChild {
+  align-self: stretch;
+  height: 232px;
+  position: relative;
+  border-radius: var(--br-base) var(--br-base) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.drManishN,
+.vascularEndo {
+  position: relative;
+  line-height: 14px;
+}
+.vascularEndo {
+  margin: 0;
+  align-self: stretch;
+  font-size: var(--font-size-base);
+  line-height: 18px;
+  white-space: pre-wrap;
+}
+.watchOnYoutube {
+  position: relative;
+  line-height: 13px;
+}
+.watchOnYoutubeWrapper {
+  border-radius: var(--br-5xs);
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs);
+  white-space: nowrap;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+}
+.drManishNRavalParent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-5xs-5);
+}
+.drManishNRavalParent,
+.frameWrapper,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  align-self: stretch;
+  border-radius: 0 0 var(--br-base) var(--br-base);
+  background-color: var(--color-azure-100);
+  overflow: hidden;
+  align-items: flex-start;
+  padding: var(--padding-xl) var(--padding-15xl) var(--padding-xl)
+    var(--padding-xl);
+}
+.rectangleParent {
+  width: 400px;
+  flex-shrink: 0;
+  align-items: flex-end;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black1);
+  font-family: var(--font-lato);
+}
+@media screen and (max-width: 450px) {
+  .drManishN {
+    font-size: var(--font-size-base);
+  }
+}

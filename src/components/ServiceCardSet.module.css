@@ -1,0 +1,98 @@
+.frameChild,
+.frameItem {
+  position: relative;
+  max-width: 100%;
+}
+.frameChild {
+  height: 224px;
+  width: 366px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-whitesmoke-100);
+  display: none;
+}
+.frameItem {
+  height: 184px;
+  flex: 1;
+  border-radius: var(--br-xs);
+  overflow: hidden;
+  object-fit: contain;
+  z-index: 1;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) var(--padding-20xl) var(--padding-xl)
+    var(--padding-21xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.loremIpsumDolor {
+  font-weight: 500;
+}
+.loremIpsumDolor,
+.loremIpsumDolor1,
+.seeAll {
+  position: relative;
+  line-height: 130.2%;
+}
+.loremIpsumDolor1 {
+  align-self: stretch;
+}
+.seeAll {
+  font-weight: 500;
+}
+.seeAllWrapper {
+  border-radius: var(--br-9xs);
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs-5) var(--padding-5xl);
+  white-space: nowrap;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+}
+.loremIpsumDolorParent,
+.loremIpsumDolorSitAmetCoParent,
+.serviceCardSet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.loremIpsumDolorSitAmetCoParent {
+  align-self: stretch;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-lato);
+}
+.loremIpsumDolorParent,
+.serviceCardSet {
+  width: 343px;
+  gap: var(--gap-9xs);
+  max-width: 100%;
+}
+.serviceCardSet {
+  width: 366px;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 398px;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black1);
+  font-family: var(--font-sf-pro-display);
+}
+@media screen and (max-width: 450px) {
+  .loremIpsumDolor {
+    font-size: var(--font-size-base);
+    line-height: 21px;
+  }
+}
